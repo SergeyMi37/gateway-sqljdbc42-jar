@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="appmsw-gateway-sqljdbc42-jar.ZPM">
+    <Module>
+      <Name>appmsw-gateway-sqljdbc42-jar</Name>
+      <Version>1.0.0</Version>
+      <Description>Installation SQL Gateway Connections. Class path: sqljdbc42.jar</Description>
+      <Keywords>jdbc</Keywords>
+      <Author>
+		<Person>Mikhaylenko Sergey</Person>
+		<CopyrightDate>2022</CopyrightDate>
+		<License>MIT</License>
+		<Notes>
+		repository:
+		https://github.com/SergeyMi37/appmsw-gateway-sqljdbc42-jar
+		description:
+		Installation SQL Gateway Connections. Class path: sqljdbc42.jar.
+		</Notes>
+	  </Author>
+      <Packaging>module</Packaging>
+      <Resource Directory="cls" Name="appmsw.gateway.jdbc.CLS"/>
+	  <FileCopy Name="jdbc" Target="${libdir}jdbc/"/>
+      <FileCopy Name="gateways.json" Target="${libdir}jdbc/gateways.json"/>
+      <SourcesRoot>src</SourcesRoot>
+      <AfterInstallMessage>
+&#13; You can see what instances of the %Library.SQLConnection class are in the module by running a command in the %SYS namespace:
+&#13; %SYS>do ##class(appmsw.gateway.jdbc).ImportSQLConnection("view")
+
+&#13; You can import a class %Library.SQLConnection instance in the %SYS namespace with the command:
+&#13; %SYS>do ##class(appmsw.gateway.jdbc).ImportSQLConnection()
+	 </AfterInstallMessage>
+    </Module>
+  </Document>
+</Export>
