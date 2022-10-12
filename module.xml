@@ -20,7 +20,6 @@
       <Packaging>module</Packaging>
       <Resource Directory="cls" Name="appmsw.gateway.jdbc.CLS"/>
 	  <FileCopy Name="jdbc" Target="${libdir}jdbc/"/>
-      <FileCopy Name="gateways.json" Target="${libdir}jdbc/gateways.json"/>
       <SourcesRoot>src</SourcesRoot>
       <AfterInstallMessage>
 &#13; You can see what instances of the %Library.SQLConnection class are in the module by running a command in the %SYS namespace:

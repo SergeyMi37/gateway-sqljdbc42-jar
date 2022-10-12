@@ -52,6 +52,30 @@ You can see what instances of the %Library.SQLConnection class are in the module
 
 ```
 %SYS>do ##class(appmsw.gateway.jdbc).ImportSQLConnection("view")
+
+%Library.SQLConnection. DSN =  type:string
+%Library.SQLConnection. Name = Default_Name_SQLConnection type:string
+%Library.SQLConnection. OnConnectStatement =  type:string
+%Library.SQLConnection. ReverseOJ = 0 type:number
+%Library.SQLConnection. URL = jdbc:mysql://ip address:port/databaseName?serverTimezone=UTC type:string
+%Library.SQLConnection. Usr = Default_DB_UserName type:string
+%Library.SQLConnection. bUnicodeStream = 0 type:number
+%Library.SQLConnection. bindTSasString = 0 type:number
+%Library.SQLConnection. classpath = /opt/oracle/mysql-connector-java-8.0.21.jar type:string
+%Library.SQLConnection. driver =  type:string
+%Library.SQLConnection. isJDBC =  type:string
+%Library.SQLConnection. needlongdatalen =  type:string
+%Library.SQLConnection. noconcat =  type:string
+%Library.SQLConnection. nodefq =  type:string
+%Library.SQLConnection. nofnconv =  type:string
+%Library.SQLConnection. nvl =  type:string
+%Library.SQLConnection. properties =  type:string
+%Library.SQLConnection. pwd =  type:string
+%Library.SQLConnection. useCAST =  type:string
+%Library.SQLConnection. useCASTCHAR =  type:string
+%Library.SQLConnection. useCOALESCE = 1 type:number
+%Library.SQLConnection. xadriver =  type:string
+
 ```
 
 You can import a class %Library.SQLConnection instance in the %SYS namespace with the command:
@@ -68,4 +92,5 @@ Change the value of a field 'driver' <>
 The password will need to be entered in the portal interface
 
 saved
+
 ```
